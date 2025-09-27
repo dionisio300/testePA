@@ -3,8 +3,9 @@ app = Flask(__name__)
 @app.route("/") 
 
 
-def index(): 
-    return render_template("index.html") # Executa o servidor SOMENTE localmente 
+def index():
+    titulo = 'Página Inicial' 
+    return render_template("index.html",titulo=titulo) # Executa o servidor SOMENTE localmente 
 
 
 
